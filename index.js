@@ -1,6 +1,9 @@
 const express = require("express");
 const app = express();
 
+
+//Removing File Extention
+
 //--Website Here--\\
 //404 Webpage
 app.use(express.static(__dirname + "/public"), (_, res, next) => {
