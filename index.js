@@ -2,7 +2,8 @@ const express = require("express");
 const app = express();
 
 const publicPath = "/public"
-const adminPath = "/admin"
+
+//404 Webpage
 
 //Adding Urls for Promotions/Game
 app.get('/group',(req,res)=>res.redirect("https://www.roblox.com/groups/12852480"))
