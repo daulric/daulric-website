@@ -7,10 +7,9 @@ const publicPath = "/public"
 
 //Adding Urls for Promotions/Game
 app.get('/group',(req,res)=>res.redirect("https://www.roblox.com/groups/12852480"))
-app.get('/blog',(req,res)=>res.redirect("https://blog.daulric.tk"))
 
 
-//Removing File Extentions
+//Main Page
 app.get('',(req,res)=>res.sendFile(__dirname + publicPath + "/index.html"))
 app.get('/policy',(req,res)=>res.sendFile(__dirname + publicPath + "/policy.html"))
 app.get('/livestream',(req,res)=>res.sendFile(__dirname + publicPath + "/livestream.html"))

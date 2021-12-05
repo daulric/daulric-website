@@ -12,14 +12,14 @@
       {
         "id": "294716ef-8110-43d0-9cd4-dfc35a061824",
         "line": 1,
-        "version": 4545,
+        "version": 4804,
         "index": 0
       },
       {
         "id": "1aa7d3c1-0f10-49da-9ab3-811c0c32e9aa",
         "line": 18,
-        "version": 4739,
-        "index": 652
+        "version": 4804,
+        "index": 637
       }
     ],
     "public/games/script.js": [
@@ -28,6 +28,14 @@
         "line": 1,
         "version": 83,
         "index": 0
+      }
+    ],
+    "public/index.html": [
+      {
+        "id": "47eb24b3-c537-4c04-b975-d94663486d16",
+        "line": 44,
+        "version": 230,
+        "index": 2411
       }
     ]
   }
