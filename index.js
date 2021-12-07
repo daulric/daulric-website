@@ -13,7 +13,7 @@ app.get('/group',(req,res)=>res.redirect("https://www.roblox.com/groups/12852480
 app.get('',(req,res)=>res.sendFile(__dirname + publicPath + "/index.html"))
 app.get('/policy',(req,res)=>res.sendFile(__dirname + publicPath + "/policy.html"))
 app.get('/livestream',(req,res)=>res.sendFile(__dirname + publicPath + "/livestream.html"))
-app.get('/team',(req,res)=>res.sendFile(__dirname + publicPath + "/team.html"))
+app.get('/about',(req,res)=>res.sendFile(__dirname + publicPath + "/about/about.html"))
 app.get('/subscription',(req,res)=>res.sendFile(__dirname + publicPath + "/subscription.html"))
 app.get('/games/',(req,res)=>res.sendFile(__dirname + publicPath + "/games.html"))
 app.get('/status',(req,res)=>res.sendFile(__dirname + publicPath + "/status.html"))
@@ -23,7 +23,7 @@ app.get('/discordchat',(req,res)=>res.sendFile(__dirname + publicPath + "/discor
 app.get('/games/dropballs',(req,res)=>res.sendFile(__dirname + publicPath + "/games/dropballs.html"))
 
 //Showcase
-app.get('/showcase', (req,res)=>res.sendFile(__dirname + publicPath + "/showcase/showcase.html"))
+app.get('/about/ulric', (req,res)=>res.sendFile(__dirname + publicPath + "/about/ulric.html"))
 
 //404 Webpage
 app.use(express.static(__dirname + "/public"), (_, res, next) => {
