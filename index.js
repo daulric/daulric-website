@@ -22,6 +22,9 @@ app.get('/discordchat',(req,res)=>res.sendFile(__dirname + publicPath + "/discor
 //SubPaths For Games
 app.get('/games/dropballs',(req,res)=>res.sendFile(__dirname + publicPath + "/games/dropballs.html"))
 
+//Showcase
+app.get('/showcase', (req,res)=>res.sendFile(__dirname + publicPath + "/showcase/showcase.html"))
+
 //404 Webpage
 app.use(express.static(__dirname + "/public"), (_, res, next) => {
   res.status(404)
