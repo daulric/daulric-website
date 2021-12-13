@@ -9,7 +9,7 @@
     <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,600,700,800,900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,600,700,800,900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400,600,700,800,900&display=swap" rel="stylesheet">
-    <title>Chat With Us</title>
+    <title>Forum</title>
     <link rel="shortcut icon" type="image/png" href="pfp.png"/>
 </head>
 <body>
@@ -24,7 +24,7 @@
                 <a class="nav-link" href="../">Home <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item active">
-              <a class="nav-link" href="/games">Games</a>
+              <a class="nav-link" href="/games">Games<span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="/subscription">Subscription</a>
@@ -34,12 +34,12 @@
             </li>
         </ul>
         <div class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 More
-              </a>
-              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="discordchat.html">Discord Chat</a>
-               </div>
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="/forum">Forum</a>
+          </div>
         </div>
         <div class="nav-item">
           <a class="nav-link" href="/policy">Policy</a>
@@ -47,25 +47,16 @@
     </div>
 </nav>
 
-<div class="features">
-    <div class="title">Chat with Us</div>
-    <div class="subtitle">Service powered by WidgetBot</div>
-    <div class="cards">
-        <iframe src="https://e.widgetbot.io/channels/706203765895594055/720227892465762405" height="600" width="800"></iframe>
-        </div>
-        </div>
-    </div>
-</div>
+<div id="hyvor-talk-view"></div>
+<script type="text/javascript">
+    var HYVOR_TALK_WEBSITE = 5885;
+    var HYVOR_TALK_CONFIG = {
+        url: false,
+        id: false
+    };
+</script>
+<script async type="text/javascript" src="//talk.hyvor.com/web-api/embed.js"></script>
 
-
-<div class="page_end">
-    <div class="footer">
-      <div class="bot-footer">
-        <img src="pfp.png" width="150"><br />
-        Copyright © daulric
-      </div><br/>
-    </div>
-</div>
 
 <!--Script Services-->
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>

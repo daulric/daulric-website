@@ -25,6 +25,9 @@ app.get('/games/dropballs',(req,res)=>res.sendFile(__dirname + publicPath + "/ga
 //Showcase
 app.get('/about/ulric', (req,res)=>res.sendFile(__dirname + publicPath + "/about/ulric.html"))
 
+//Forum
+app.get('/forum', (req,res)=>res.sendFile(__dirname + publicPath + '/forum/forum.html'))
+
 //404 Webpage
 app.use(express.static(__dirname + "/public"), (_, res, next) => {
   res.status(404)
