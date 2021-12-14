@@ -1,3 +1,5 @@
+//WebServer Here
+
 const express = require("express");
 const app = express();
 
@@ -22,7 +24,7 @@ app.get('/discordchat',(req,res)=>res.sendFile(__dirname + publicPath + "/discor
 //SubPaths For Games
 app.get('/games/dropballs',(req,res)=>res.sendFile(__dirname + publicPath + "/games/dropballs.html"))
 
-//Showcase
+//About
 app.get('/about/ulric', (req,res)=>res.sendFile(__dirname + publicPath + "/about/ulric.html"))
 
 //Forum
