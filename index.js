@@ -9,6 +9,7 @@ const publicPath = "/public"
 
 //Adding Urls for Promotions/Game
 app.get('/group',(req,res)=>res.redirect("https://www.roblox.com/groups/12852480"))
+app.get('/premium',(req,res)=>res.redirect("https://www.roblox.com/game-pass/24968083/RoNetwork-Premium"))
 
 
 //Main Page
@@ -25,10 +26,14 @@ app.get('/discordchat',(req,res)=>res.sendFile(__dirname + publicPath + "/discor
 app.get('/games/dropballs',(req,res)=>res.sendFile(__dirname + publicPath + "/games/dropballs.html"))
 
 //About
-app.get('/about/ulric', (req,res)=>res.sendFile(__dirname + publicPath + "/about/ulric.html"))
+app.get('/about/@ulric', (req,res)=>res.sendFile(__dirname + publicPath + "/about/ulric.html"))
 
 //Forum
-app.get('/forum', (req,res)=>res.sendFile(__dirname + publicPath + '/forum/forum.html'))
+app.get('/forum', (req,res)=>res.redirect("https://forum.ronetwork.tk"))
+
+// Zoom Codes
+app.get('/classcodes', (req, res)=>res.sendFile(__dirname + publicPath + '/school/schoollinks.html'))
+
 
 //404 Webpage
 app.use(express.static(__dirname + "/public"), (_, res, next) => {
