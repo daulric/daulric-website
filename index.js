@@ -10,6 +10,7 @@ const publicPath = "/public"
 //Adding Urls for Promotions/Game
 app.get('/group',(req,res)=>res.redirect("https://www.roblox.com/groups/12852480"))
 app.get('/premium',(req,res)=>res.redirect("https://www.roblox.com/game-pass/24968083/RoNetwork-Premium"))
+app.get('/newsite', (req, res)=>res.redirect("https://rocorestudio.tk"))
 
 
 //Main Page
